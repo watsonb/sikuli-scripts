@@ -1,0 +1,2 @@
+#!/bin/bash
+~/sikuli/sikuli/runIDE -r first.sikuli

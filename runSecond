@@ -1,0 +1,6 @@
+#!/bin/bash
+export DISPLAY=:0
+export SIKULI_HOME=~/Sikuli-X-1.0rc3-linux-x86_64/Sikuli-IDE
+#~/sikuli/sikuli/runIDE -r first.sikuli
+cd second.sikuli
+cucumber

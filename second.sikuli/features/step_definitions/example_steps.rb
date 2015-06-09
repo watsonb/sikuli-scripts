@@ -23,6 +23,7 @@ Given /^I wait at least (\d+) seconds for "([^"]*)" to appear$/ do |time, filena
 end
 
 Given /^The login page is visible$/ do
+  @screen = Sikuli::Screen.new
   @screen.find "devapp-admin.png"
 end
 

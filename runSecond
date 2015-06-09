@@ -6,6 +6,8 @@ export SIKULI_HOME=~/Sikuli-X-1.0rc3-linux-x86_64/Sikuli-IDE
 
 export PATH=$PATH:/var/lib/jenkins/.rvm/bin:/var/lib/jenkins/.rvm/gems/jruby-1.7.19/bin:/var/lib/jenkins/.rvm/gems/jruby-1.7.19@global/bin:/var/lib/jenkins/.rvm/rubies/jruby-1.7.19/bin:/var/lib/jenkins/Sikuli-X-1.0rc3-linux-x86_64/Sikuli-IDE:/var/lib/jenkins/Sikuli-X-1.0rc3-linux-x86_64/Sikuli-IDE/libs
 
+export GEM_PATH=/var/lib/jenkins/.rvm/gems/jruby-1.7.19:/var/lib/jenkins/.rvm/gems/jruby-1.7.19@global
+
 #~/sikuli/sikuli/runIDE -r first.sikuli
 
 #the following line loads RVM into the shell "as a function"

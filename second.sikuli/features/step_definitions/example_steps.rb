@@ -31,6 +31,7 @@ When /^I type "([^"]*)" into the username field$/ do |text|
   @screen.click "fld_username.png"
   @screen.type text
   #@screen.type Sikuli::KEY_RETURN
+  @screen.type Sikuli::TAB
 end
 
 And /^I type "([^"]*)" into the password field$/ do |text|

@@ -1,10 +1,8 @@
-Feature: Login
-  I should be able to access the login page with the Google Chrome browser
-  I should be able to login
-  
-  Scenario: Access Login Page
-    Given I have launched Google Chrome
-    And I wait at least 20 seconds for "chrome_open2.png" to appear
+Feature: Create a poll 
+  As an admin, I should be able to create a poll
+ 
+  Scenario: Create a poll
+    Given I have logged in
     When I type "http://devops-devapp/admin"
     Then I should see "devapp-admin.png"
 

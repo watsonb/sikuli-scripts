@@ -56,7 +56,7 @@ Feature: Create a poll
     Then I should see "delete_success.png"
     
   Scenario: Clean up
-    Given I see "delete_success.png"
+    Given I deleted a poll and I see "delete_success.png"
     When I click "btn_logout.png"
       And I wait 2 seconds for "logout_success.png"
       And I click "btn_close_chrome.png"

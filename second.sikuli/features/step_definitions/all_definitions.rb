@@ -96,3 +96,7 @@ end
 And /^I press Delete$/ do  
   @screen.type Sikuli::DELETE
 end
+
+When /^I click and hold "([^"]*)" for (\d+) seconds$/ do |filename, time|
+  @screen.click_and_hold filename, time.to_i
+end

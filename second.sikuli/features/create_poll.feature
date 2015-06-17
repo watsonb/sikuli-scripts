@@ -28,15 +28,11 @@ Feature: Create a poll
     
   Scenario: Vote on a poll
     Given I created a poll and I see "txt_add_poll_success.png"
-    When I click "url2.png"
+    When I click and hold "url2.png" for 30 seconds
       And I press Delete
       And I type "http://devops-devapp/polls"
-      And I press Enter
-      And I click "url2.png"
-      And I press Delete
-      And I type "http://devops-devapp/polls"
-      And I press Enter
-      And I wait 2 seconds for "poll_link.png"
+      And I press Enter      
+      And I wait 20 seconds for "poll_link.png"
       And I click "poll_link.png"
       And I wait 2 seconds for "poll_choices.png"
       And I click "btn_choice2.png"

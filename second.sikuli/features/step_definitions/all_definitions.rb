@@ -83,6 +83,16 @@ Given /^I see "([^"]*)"$/ do |filename|
   @screen.wait filename, 5
 end
 
+Given /^I created a poll and I see "([^"]*)"$/ do |filename|
+  @screen = Sikuli::Screen.new  
+  @screen.wait filename, 5
+end
+
+Given /^I voted and see "([^"]*)"$/ do |filename|
+  @screen = Sikuli::Screen.new  
+  @screen.wait filename, 5
+end
+
 And /^I press Delete$/ do  
   @screen.type Sikuli::DELETE
 end

@@ -27,7 +27,7 @@ Feature: Create a poll
     Then I should see "txt_add_poll_success.png"
     
   Scenario: Vote on a poll
-    Given I see "txt_add_poll_success.png"
+    Given I created a poll and I see "txt_add_poll_success.png"
     When I click "url2.png"
       And I press Delete
       And I type "http://devops-devapp/polls"
@@ -40,7 +40,7 @@ Feature: Create a poll
     Then I should see "vote_result.png"
     
   Scenario: Delete a poll
-    Given I see "vote_result.png"
+    Given I voted and see "vote_result.png"
     When I click "url3.png"
       And I press Delete
       And I type "http://devops-devapp/admin"

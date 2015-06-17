@@ -4,8 +4,10 @@ Feature: Login
   
   Scenario: Access Login Page
     Given I have launched Google Chrome
-    And I wait at least 20 seconds for "chrome_open2.png" to appear
-    When I type "http://devops-devapp/admin"
+      And I wait at least 20 seconds for "chrome_open2.png" to appear
+    When I click "url.png"
+      And I type "http://devops-devapp/admin"
+      And I press Enter
     Then I should see "devapp-admin.png"
 
   Scenario: Log into the application

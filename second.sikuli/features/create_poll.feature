@@ -4,7 +4,9 @@ Feature: Create a poll
   Scenario: Create a poll
     Given I have logged in
     When I click "questions.png"
+      And I wait 2 seconds for ""
       And I click "add_question.png"
+      And I wait 2 seconds for ""
     Then I should see "devapp-admin.png"
 
   Scenario: Log into the application

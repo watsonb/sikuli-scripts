@@ -15,4 +15,4 @@ export GEM_PATH=/var/lib/jenkins/.rvm/gems/jruby-1.7.19:/var/lib/jenkins/.rvm/ge
 
 cd second.sikuli
 #cucumber --format json --out reports.json
-cucumber features/example.feature features/create_poll.feature--format json --out reports.json
+cucumber features/example.feature features/create_poll.feature --format json --out reports.json

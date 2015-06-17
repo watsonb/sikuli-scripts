@@ -98,5 +98,5 @@ And /^I press Delete$/ do
 end
 
 When /^I click and hold "([^"]*)" for (\d+) seconds$/ do |filename, time|
-  @screen.click_image_and_hold filename, time.to_i
+  @screen.click_and_hold time.to_i, filename
 end

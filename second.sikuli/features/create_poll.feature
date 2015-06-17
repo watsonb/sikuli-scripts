@@ -49,4 +49,16 @@ Feature: Create a poll
       And I click "questions.png"
       And I click "checkbox.png"
       And I click "drop_down.png"
-      And I click ""
+      And I click "delete_selected.png"
+      And I click "btn_go.png"
+      And I wait 2 seconds for "are_you_sure.png"
+      And I click "btn_yes_im_sure.png"
+    Then I should see "delete_success.png"
+    
+  Scenario: Clean up
+    Given I see "delete_success.png"
+    When I click "btn_logout.png"
+      And I wait 2 seconds for "logout_success.png"
+      And I click "btn_close_chrome.png"
+    Then I should see "applications.png"
+      

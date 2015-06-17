@@ -78,8 +78,11 @@ And /^I click the "([^"]*)" button$/ do |filename|
   @screen.click filename
 end
 
-#Then /^I should see "([^"]*)"$/ do |filename|
-  #@screen.find filename
-#  @screen.wait filename, 5
-#end
 
+Given /^I see "([^"]*)"$/ do |filename|  
+  @screen.wait filename, 5
+end
+
+And /^I press Delete$/ do  
+  @screen.type Sikuli::DELETE
+end

@@ -1,5 +1,7 @@
 Feature: Create a poll 
   As an admin, I should be able to create a poll
+  As an admin, I should be able to vote on a poll
+  As an admin, I should be able to delete a poll
  
   Scenario: Create a poll
     Given I have logged in
@@ -23,3 +25,28 @@ Feature: Create a poll
       And I click "btn_now.png"
       And I click "save_button.png"
     Then I should see "txt_add_poll_success.png"
+    
+  Scenario: Vote on a poll
+    Given I see "txt_add_poll_success.png"
+    When I click "url2.png"
+      And I press Delete
+      And I type "http://devops-devapp/polls"
+      And I press Enter
+      And I wait 2 seconds for "poll_link.png"
+      And I click "poll_link.png"
+      And I wait 2 seconds for "poll_choices.png"
+      And I click "btn_choice2.png"
+      And I click "btn_vote.png"
+    Then I should see "vote_result.png"
+    
+  Scenario: Delete a poll
+    Given I see "vote_result.png"
+    When I click "url3.png"
+      And I press Delete
+      And I type "http://devops-devapp/admin"
+      And I press Enter
+      And I wait 2 seconds for "txt_welcome_jenkins.png"
+      And I click "questions.png"
+      And I click "checkbox.png"
+      And I click "drop_down.png"
+      And I click ""

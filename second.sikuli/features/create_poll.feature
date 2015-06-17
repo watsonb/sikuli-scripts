@@ -4,10 +4,25 @@ Feature: Create a poll
   Scenario: Create a poll
     Given I have logged in
     When I click "questions.png"
-      And I wait 2 seconds for ""
+      And I wait 2 seconds for "txt_select_question.png"
       And I click "add_question.png"
-      And I wait 2 seconds for ""
-    Then I should see "devapp-admin.png"
+      And I wait 2 seconds for "txt_add_question.png"
+      And I click "question_text.png"
+      And I type "automated test question"
+      And I click "choice_text.png"
+      And I type "auto choice 1"
+      And I press Tab
+      And I press Tab
+      And I type "auto choice 2"
+      And I press Tab
+      And I press Tab
+      And I type "auto choice 3"
+      And I click "save_button.png"
+      And I wait 2 seconds for "error_msg.png"
+      And I click "btn_today.png"
+      And I click "btn_now.png"
+      And I click "save_button.png"
+    Then I should see ""
 
   Scenario: Log into the application
     Given The login page is visible

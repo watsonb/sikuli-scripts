@@ -85,7 +85,7 @@ end
 
 Given /^I created a poll and I see "([^"]*)"$/ do |filename|
   @screen = Sikuli::Screen.new  
-  @screen.wait filename, 5
+  @screen.wait filename, 20
 end
 
 Given /^I voted and see "([^"]*)"$/ do |filename|

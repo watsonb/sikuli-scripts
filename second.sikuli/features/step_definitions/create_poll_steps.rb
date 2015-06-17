@@ -1,6 +1,6 @@
-Given /^The login page is visible$/ do
+Given /^I have logged in$/ do
   @screen = Sikuli::Screen.new
-  @screen.find "devapp-admin.png"
+  @screen.find "txt_welcome_jenkins.png"
 end
 
 When /^I type "([^"]*)" into the username field$/ do |text|

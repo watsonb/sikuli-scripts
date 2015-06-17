@@ -3,7 +3,8 @@ Feature: Create a poll
  
   Scenario: Create a poll
     Given I have logged in
-    When I type "http://devops-devapp/admin"
+    When I click "questions.png"
+      And I click "add_question.png"
     Then I should see "devapp-admin.png"
 
   Scenario: Log into the application

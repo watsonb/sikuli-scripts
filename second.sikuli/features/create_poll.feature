@@ -32,6 +32,10 @@ Feature: Create a poll
       And I press Delete
       And I type "http://devops-devapp/polls"
       And I press Enter
+      And I click "url2.png"
+      And I press Delete
+      And I type "http://devops-devapp/polls"
+      And I press Enter
       And I wait 2 seconds for "poll_link.png"
       And I click "poll_link.png"
       And I wait 2 seconds for "poll_choices.png"

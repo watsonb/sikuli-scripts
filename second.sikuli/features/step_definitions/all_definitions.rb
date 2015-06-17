@@ -23,11 +23,11 @@ And /^I type "([^"]*)"$/ do |text|
   @screen.type text
 end
 
-And /^I press Tab$/ do |text|  
+And /^I press Tab$/ do  
   @screen.type Sikuli::TAB
 end
 
-And /^I press Enter$/ do |text|  
+And /^I press Enter$/ do  
   @screen.type Sikuli::KEY_RETURN
 end
 

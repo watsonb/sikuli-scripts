@@ -22,11 +22,4 @@ Feature: Create a poll
       And I click "btn_today.png"
       And I click "btn_now.png"
       And I click "save_button.png"
-    Then I should see ""
-
-  Scenario: Log into the application
-    Given The login page is visible
-    When I type "jenkins" into the username field
-      And I type "password" into the password field
-      And I click the "btn_login.png" button
-    Then I should see "txt_welcome_jenkins.png"
+    Then I should see "txt_add_poll_success.png"

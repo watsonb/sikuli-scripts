@@ -22,7 +22,8 @@ Feature: (SRS 1.0.0) Login to the website
     Then I should see "txt_welcome_jenkins.png"
     
   @automatedScenarioThree
-  Scenario: (SRS 1.3.0) Log out of the application    
+  Scenario: (SRS 1.3.0) Log out of the application
+    Given I am still logged in    
     When I click "btn_logout.png"
       And I wait 2 seconds for "logout_success.png"
       And I click "button_close_chrome.png"

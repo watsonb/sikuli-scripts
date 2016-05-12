@@ -94,6 +94,10 @@ When /^I click and hold "([^"]*)" for (\d+) seconds$/ do |filename, time|
   @screen.click_and_hold time.to_i, filename
 end
 
+Given /^I am still logged in$/ do
+  @screen = Sikuli::Screen.new
+end
+
 
 #Manual Testing stuff
 

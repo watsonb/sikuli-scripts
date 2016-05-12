@@ -16,3 +16,5 @@ export GEM_PATH=/var/lib/jenkins/.rvm/gems/jruby-1.7.19:/var/lib/jenkins/.rvm/ge
 cd simpleAutoAndManual
 #cucumber --format json --out reports.json
 cucumber --tags @automatedFeature --format json --out auto_reports.json
+
+#extra line for git commit from Linux

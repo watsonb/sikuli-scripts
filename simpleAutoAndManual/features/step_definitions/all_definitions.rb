@@ -3,7 +3,7 @@
 #Create Poll
 
 Given /^I have logged in$/ do
-#  @screen = Sikuli::Screen.new
+  @screen = Sikuli::Screen.new
   @screen.find "txt_welcome_jenkins.png"
 end
 
@@ -30,7 +30,7 @@ end
 #Example steps
 
 Given /^I have launched Google Chrome$/ do
-#  @screen = Sikuli::Screen.new
+  @screen = Sikuli::Screen.new
   @screen.click "applications.png"
   @screen.wait "internet_menu_option.png", 2
   @screen.click "internet_menu_option.png"
@@ -47,7 +47,7 @@ Given /^I wait at least (\d+) seconds for "([^"]*)" to appear$/ do |time, filena
 end
 
 Given /^The login page is visible$/ do
-#  @screen = Sikuli::Screen.new
+  @screen = Sikuli::Screen.new
   @screen.find "devapp-admin.png"
 end
 
@@ -82,7 +82,7 @@ Given /^I voted and see "([^"]*)"$/ do |filename|
 end
 
 Given /^I deleted a poll and I see "([^"]*)"$/ do |filename|
-#  @screen = Sikuli::Screen.new  
+  @screen = Sikuli::Screen.new  
   @screen.wait filename, 5
 end
 

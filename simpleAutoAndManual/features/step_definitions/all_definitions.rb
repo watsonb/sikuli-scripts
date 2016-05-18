@@ -102,21 +102,26 @@ end
 #Manual Testing stuff
 
 Given /^I have satisfied some preconditions$/ do
-  pending "Manually satisfy any test preconditions"
+  #pending "Manually satisfy any test preconditions"
+  puts 'You must manually satisfy the test preconditions by logging into the application as Bob with the password: Alice'
 end
 
 When /^I do something only a person can do$/ do
-  pending "Do something only a person can do"
+  #pending "Do something only a person can do"
+  puts 'The procedure is as follows: 1. do this, 2. do that.'
 end
 
 Then /^I should see something amazing$/ do
-  pending "Did you see something amazing?"
+  #pending "Did you see something amazing?"
+  puts 'Did you see something amazing?'
 end
 
 When /^I do something else only a person can do$/ do
-  pending "Do something else only a person can do"
+  #pending "Do something else only a person can do"
+  puts 'The procedure for this step is as follows: 1. click on this, 2. type that, 3. click submit.'
 end
 
 Then /^I should see something truly remarkable$/ do
-  pending "Did you see something truly remarkable?"
+  #pending "Did you see something truly remarkable?"
+  puts 'Did you see something truly remarkable after clicking submit?'
 end

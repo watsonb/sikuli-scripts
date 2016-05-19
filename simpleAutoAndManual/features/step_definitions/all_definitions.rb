@@ -103,12 +103,16 @@ end
 
 Given /^I have satisfied some preconditions$/ do
   #pending "Manually satisfy any test preconditions"
-  puts 'You must manually satisfy the test preconditions by logging into the application as Bob with the password: Alice'
+  puts 'You must manually satisfy the test preconditions by:'
+  puts '1. Log into the application as "Bob"' 
+  puts '2. With the password: "Alice"'  
 end
 
 When /^I do something only a person can do$/ do
   #pending "Do something only a person can do"
-  puts 'The procedure is as follows: 1. do this, 2. do that.'
+  puts 'The procedure is as follows:'
+  puts '1. do this'
+  puts '2. do that'
 end
 
 Then /^I should see something amazing$/ do
@@ -118,7 +122,10 @@ end
 
 When /^I do something else only a person can do$/ do
   #pending "Do something else only a person can do"
-  puts 'The procedure for this step is as follows: 1. click on this, 2. type that, 3. click submit.'
+  puts 'The procedure for this step is as follows:'
+  puts '1. click on this'
+  puts '2. type that'
+  puts '3. click submit.'
 end
 
 Then /^I should see something truly remarkable$/ do
